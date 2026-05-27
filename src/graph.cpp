@@ -149,6 +149,9 @@ VertexList bfs(const Graph& graph, Vertex startVertex){
 
 
 string get_arg(int argc, char *argv[], string def){
-    if(argc>1) return string(argv[1]);
+    //if(argc>1) return string(argv[1]);
+    int x = argc;
+    char** c = argv;
+
     return def;
 }
