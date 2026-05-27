@@ -9,6 +9,11 @@
 
 using namespace std;
 
+void error(string msg)
+{
+    cout << msg;
+}
+
 DisjointSet::DisjointSet(int numVertices){
     subsets.resize(numVertices);
     for(Vertex v = 0; v<numVertices; v++){
