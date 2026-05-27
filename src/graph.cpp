@@ -7,6 +7,7 @@
 #include <fstream>
 #include <iostream>
 
+using namespace std;
 
 DisjointSet::DisjointSet(int numVertices){
     subsets.resize(numVertices);
@@ -149,9 +150,7 @@ VertexList bfs(const Graph& graph, Vertex startVertex){
 
 
 string get_arg(int argc, char *argv[], string def){
-    //if(argc>1) return string(argv[1]);
-    int x = argc;
-    char** c = argv;
-    cout<<c<<x;
+    if(argc>1) return string(argv[1]);
+
     return def;
 }
